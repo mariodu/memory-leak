@@ -1,0 +1,29 @@
+{
+  "name": "memory-leak",
+  "version": "1.0.0",
+  "description": "memory leak demo",
+  "main": "leak-memory.js",
+  "dependencies": {
+    "heapdump": "~0.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node --expose-gc leak-memory.js",
+    "plot": "python plot.py",
+    "clean": "rm *.heapsnapshot; rm usage.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariodu/memory-leak.git"
+  },
+  "keywords": [
+    "memory",
+    "leak"
+  ],
+  "author": "mariodu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariodu/memory-leak/issues"
+  },
+  "homepage": "https://github.com/mariodu/memory-leak#readme"
+}
